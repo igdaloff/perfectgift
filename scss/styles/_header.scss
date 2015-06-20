@@ -1,0 +1,43 @@
+.site-header{
+  margin-top: 8em;
+  text-align: center;
+
+  @include smaller-than(medium){
+    margin-top: 4em;
+  }
+}
+
+.main-logo{
+  width: 500px;
+  height: 167px;
+  margin: 0 auto 1em;
+  border: 8px solid $black;
+  font-weight: 800;
+  font-size: 3.5em;
+  line-height: 3.75;
+  color: $black;
+  border-radius: 1px;
+  @extend .sans;
+}
+
+.main-subhead{
+  width: 50%;
+  max-width: 440px;
+  margin: 0 auto;
+  @extend .sans;
+  font-size: 1.5em;
+  font-weight: 400;
+
+  @include smaller-than(medium){
+    width: 90%;
+  }
+}
+
+.text-number{
+  display: inline-block;
+  margin-top: 0.7em;
+  font-size: 3.5em;
+  @extend .sans;
+  font-weight: 500;
+  color: $black;
+}
